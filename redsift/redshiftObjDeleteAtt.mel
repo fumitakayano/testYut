@@ -1,0 +1,53 @@
+{
+	string $n;
+	string $names[];
+
+	$names = `ls -sl`;
+	for( $n in $names )
+	{
+deleteAttr( $n + ".rsAOCaster" );
+deleteAttr( $n + ".rsAutoBumpMap" );
+deleteAttr( $n + ".rsCausticCaster" );
+deleteAttr( $n + ".rsCausticReceiver" );
+deleteAttr( $n + ".rsCausticVisible" );
+deleteAttr( $n + ".rsDisplacementScale" );
+deleteAttr( $n + ".rsDoSmoothSubdivision" );
+deleteAttr( $n + ".rsEnableDisplacement" );
+deleteAttr( $n + ".rsEnableSubdivision" );
+deleteAttr( $n + ".rsEnableVisibilityOverrides" );
+deleteAttr( $n + ".rsFgCaster" );
+deleteAttr( $n + ".rsFgVisible" );
+deleteAttr( $n + ".rsForceBruteForceGI" );
+deleteAttr( $n + ".rsGiCaster" );
+deleteAttr( $n + ".rsGiReceiver" );
+deleteAttr( $n + ".rsGiVisible" );
+deleteAttr( $n + ".rsMatteAffectedByMatteLights" );
+deleteAttr( $n + ".rsMatteAlpha" );
+deleteAttr( $n + ".rsMatteApplyToSecondaryRays" );
+deleteAttr( $n + ".rsMatteDiffuseScale" );
+deleteAttr( $n + ".rsMatteEnable" );
+deleteAttr( $n + ".rsMatteReflectionScale" );
+deleteAttr( $n + ".rsMatteRefractionScale" );
+deleteAttr( $n + ".rsMatteShadowAffectsAlpha" );
+deleteAttr( $n + ".rsMatteShadowTransparency" );
+deleteAttr( $n + ".rsMatteShowBackground" );
+deleteAttr( $n + ".rsMaxDisplacement" );
+deleteAttr( $n + ".rsMaxTessellationSubdivs" );
+deleteAttr( $n + ".rsMinTessellationLength" );
+deleteAttr( $n + ".rsObjectId" );
+deleteAttr( $n + ".rsOutOfFrustumTessellationFactor" );
+deleteAttr( $n + ".rsPrimaryRayVisible" );
+deleteAttr( $n + ".rsReflectionCaster" );
+deleteAttr( $n + ".rsReflectionVisible" );
+deleteAttr( $n + ".rsRefractionCaster" );
+deleteAttr( $n + ".rsRefractionVisible" );
+deleteAttr( $n + ".rsScreenSpaceAdaptive" );
+deleteAttr( $n + ".rsSecondaryRayVisible" );
+deleteAttr( $n + ".rsSelfShadows" );
+deleteAttr( $n + ".rsShadowCaster" );
+deleteAttr( $n + ".rsShadowReceiver" );
+deleteAttr( $n + ".rsSubdivisionRule" );
+deleteAttr( $n + ".rsMatteShadowEnable" );
+deleteAttr( $n + ".rsMatteShadowColor" );
+	}
+}
