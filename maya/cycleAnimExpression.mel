@@ -1,0 +1,13 @@
+#maya cycleAnim expression
+
+{
+    $CycleFrame = 40;
+
+
+    int $imageNumber = (frame + addGrpGeo_Name.offsetFrame) % $CycleFrame;
+    if ($imageNumber == 0)
+    {
+        $imageNumber = $CycleFrame;
+    }
+    texture_Name.frameExtension = $imageNumber;
+}
